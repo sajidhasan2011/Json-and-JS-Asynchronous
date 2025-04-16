@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Convert a JS object into JSSON String, Ziar Soinik</h2>
+    <p id="result"></p>
+
+    <script>
+      var person = {
+        name: "Zakir Khan",
+        age: 48,
+        grade: 8,
+      };
+
+      var myJSON = JSON.stringify(person);
+      var newObj = JSON.parse(myJSON);
+
+      document.getElementById("result").innerHTML = newObj.name;
+    </script>
+  </body>
+</html>
